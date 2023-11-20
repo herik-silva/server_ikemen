@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '3099-177-66-76-255.ngrok-free.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '3099-177-66-76-255.ngrok-free.app', 'serverikemenstore.onrender.com']
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'https://ikemenstore.netlify.app'
