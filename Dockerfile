@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN python manage.py migrate
+RUN python manage.py migrate --run-syncdb --noinput --settings=backend.settings.production
 
 # Comando para iniciar o servidor Gunicorn
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "backend.wsgi:application"]
